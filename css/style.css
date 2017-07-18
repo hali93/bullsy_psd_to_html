@@ -106,14 +106,15 @@ header {
 	float: left;
 	color: #463f3a;
 }
-.logo-text h1 {
+.logo-text h2 {
 	font-family: 'Oswald', sans-serif;
 	font-size: 45px;
 	margin: 0;
 	line-height: 45px;
+	letter-spacing: 2px;
 }
 .logo-text p {
-	font-size: 15px;
+	font-size: 12px;
 	font-weight: 100;
 	font-family: 'MuseoSans_500', sans-serif;
 	margin: 0;
@@ -504,9 +505,10 @@ header .navbar > ul li a:hover {
 	font-size: 45px;
 	margin: 0;
 	line-height: 45px;
+	letter-spacing: 2px;
 }
 .footer-middle .logo-text p {
-	font-size: 15px;
+	font-size: 12px;
 	font-weight: 100;
 	font-family: 'MuseoSans_500', sans-serif;
 	margin: 0;
