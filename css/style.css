@@ -4,7 +4,7 @@
 	src:url("../fonts/MuseoSans_500.eot");
 }
 
-*{
+* {
 	box-sizing: border-box;
 }
 .row:before,
@@ -19,8 +19,8 @@
 }
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
+.col-3 {width: 24%;}
+.col-4 {width: 32%;}
 .col-5 {width: 41.66%;}
 .col-6 {width: 50%;}
 .col-7 {width: 58.33%;}
@@ -46,10 +46,8 @@ body {
 	background-image: url("../images/slideshow-image-3.png");
 	background-position: center;
 	background-repeat: no-repeat; 
-	
 	height: 520px;
 }
-
 /* Top bar */
 .clearfix:after {
   content: "";
@@ -61,21 +59,27 @@ body {
 	font-family: 'MuseoSans_500', sans-serif;
 	font-size: 14px;
 }
-.phone {
-	float: left;
+.contact-item {
+	display: inline-block;
+	position: relative;
+	margin-right: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	color: #463f3a;
+}
+.contact-item p {
+	display: inline;
 	margin-right: 20px;
 	color: #463f3a;
 }
-.phone > p > img {
-	margin-top: -4px;
-}
-.email {
-	float: left;
-	color: #463f3a;
+.contact-item img {
+	padding-right: 5px;
+	padding-bottom: 2px;
 }
 .top-menu {
 	float: right;
 	padding-top: 15px;
+	padding-bottom: 15px;
 }
 .top-menu > ul {
 	list-style: none;
@@ -135,8 +139,14 @@ header .navbar > ul {
 }
 header .navbar > ul li {
 	display: inline-block;
-	padding-right: 15px;
-	color: #f55856;
+}
+.navbar > ul li a:before {
+  content: " / ";
+  color: #f55856;
+  padding: 0 15px 0 15px;
+}
+.navbar > ul li:first-child a:before {
+  content: "";
 }
 header .navbar > ul li a {
 	display: block;
@@ -206,6 +216,7 @@ header .navbar > ul li a:hover {
 	margin-top: 30px;
 }
 .service {
+	width: 33.33%;
 	text-align: center;
 	color: #463f3a;
 }
@@ -261,205 +272,180 @@ header .navbar > ul li a:hover {
 }
 .portfolio_1 .section_heading h1 span {
 	background: #f8f8f8;
-    padding: 0 15px;
 }
-.portfolio_1 .image {
+.portfolio_1 .col-4 {
 	margin-right: 23px;
 	margin-bottom: 40px;
-	float: left;
-	width: 32%;
 	background-color: #ffffff;
 	color: #5f5954;
 }
-.portfolio_1 .image img {
+.portfolio_1 .col-4 img {
 	width: 100%;
 }
-.portfolio_1 .image:last-child {
+.portfolio_1 .col-4:last-child {
 	margin-right: 0;
 }
-.portfolio_1 .image h1 {
+.portfolio_1 .col-4 h1 {
 	font-size: 30px;
 	margin: 0;
 	padding: 15px;
 }
-.portfolio_1 .image .container p {
+.portfolio_1 .col-4 .container p {
 	font-size: 16px;
 	font-family: 'MuseoSans_500', sans-serif;
 	font-style: italic;
 	margin: 0;
 	padding-left: 15px;
 }
-.portfolio_1 .image .container p:last-child {
+.portfolio_1 .col-4 .container p:last-child {
 	font-size: 18px;
-	font-family: 'MuseoSans_500', sans-serif;
-	margin: 0;
 	padding: 15px 0 15px 15px;
-	color: #f66361;
 }
-.portfolio_1 .image .container p:last-child a {
+.portfolio_1 .col-4 .container p:last-child a {
 	color: #f66361;
 	text-decoration: none;
 }
-.portfolio_1 .image .container p:last-child a:hover {
+.portfolio_1 .col-4 .container p:last-child a:hover {
 	color: #980806;
 }
 /*Portfolio 2*/
-.portfolio_2 {
+.portfolio_2, .portfolio_2 .section_heading h1 span {
 	background-color: #fdfdfd;
 }
-.portfolio_2 .section_heading h1 span {
-	background: #fdfdfd;
-    padding: 0 15px;
-}
-.portfolio_2 .image {
+.portfolio_2 .col-3 {
 	margin-right: 15px;
 	margin-bottom: 40px;
-	float: left;
-	width: 24%;
-	background-color: #fdfdfd;
 }
-.portfolio_2 .image:last-child {
+.portfolio_2 .col-3:last-child {
 	margin-right: 0;
 }
-.portfolio_2 .image img {
+.portfolio_2 .col-3 img {
 	width: 100%;
 }
-.portfolio_2 .image h1 {
+.portfolio_2 .col-3 h1 {
 	font-size: 30px;
 	margin: 0;
 	padding: 15px;
 }
-.portfolio_2 .image .container p {
+.portfolio_2 .col-3 .container p {
 	font-size: 16px;
 	font-family: 'MuseoSans_500', sans-serif;
 	margin: 0;
 	padding-top: 15px;
 }
-.portfolio_2 .image .container h4 {
+.portfolio_2 .col-3 .container h4 {
 	font-size: 20px;
 	font-family: 'MuseoSans_500', sans-serif;
 	font-weight: bolder;
 	margin: 0;
 	padding-top: 15px;
 }
-.portfolio_2 .image .container p:last-child {
+.portfolio_2 .col-3 .container p:last-child {
 	margin-top: 20px;
 	padding: 15px 0 15px 0;
 	background-color: #463f3a;
 	text-align: center;
 }
-.portfolio_2 .image .container p:last-child a {
+.portfolio_2 .col-3 .container p:last-child a {
 	font-size: 20px;
 	font-family: 'Oswald', sans-serif;
     font-weight: bolder;
     color: #ffffff;
 	text-decoration: none;
 }
-.portfolio_2 .image .container p:last-child a:hover {
+.portfolio_2 .col-3 .container p:last-child a:hover {
 	color: #cd5a51;
 }
 /*Portfolio 3*/
-.portfolio_3 {
+.portfolio_3, .portfolio_3 .section_heading h1 span {
 	background-color: #f8f8f8;
 }
-.portfolio_3 .section_heading h1 span {
-	background: #f8f8f8;
-    padding: 0 15px;
-}
-.portfolio_3 .image {
+.portfolio_3 .col-3 {
 	margin-right: 15px;
 	margin-bottom: 40px;
-	float: left;
-	width: 24%;
 	background-color: #fdfdfd;
 }
-.portfolio_3 .image:last-child {
+.portfolio_3 .col-3:last-child {
 	margin-right: 0;
 }
-.portfolio_3 .image img {
+.portfolio_3 .col-3 img {
 	width: 100%;
 }
-.portfolio_3 .image h1 {
+.portfolio_3 .col-3 h1 {
 	font-size: 30px;
 	margin: 0;
 	padding: 15px;
 }
-.portfolio_3 .image .container p {
+.portfolio_3 .col-3 .container p {
 	font-size: 16px;
 	font-family: 'MuseoSans_500', sans-serif;
 	margin: 0;
 	padding-top: 15px;
 }
-.portfolio_3 .image .container h4 {
+.portfolio_3 .col-3 .container h4 {
 	font-size: 20px;
 	font-family: 'MuseoSans_500', sans-serif;
 	font-weight: bolder;
 	margin: 0;
 	padding-top: 15px;
 }
-.portfolio_3 .image .container p:last-child {
+.portfolio_3 .col-3 .container p:last-child {
 	margin-top: 20px;
 	padding: 15px 0 15px 0;
 	background-color: #463f3a;
 	text-align: center;
 }
-.portfolio_3 .image .container p:last-child a {
+.portfolio_3 .col-3 .container p:last-child a {
 	font-size: 20px;
 	font-family: 'Oswald', sans-serif;
     font-weight: bolder;
     color: #ffffff;
 	text-decoration: none;
 }
-.portfolio_3 .image .container p:last-child a:hover {
+.portfolio_3 .col-3 .container p:last-child a:hover {
 	color: #cd5a51;
 }
 /*Blog*/
-.blog {
+.blog, .blog .section_heading h1 span {
 	background-color: #fdfdfd;
 }
 .blog .section_heading h1 span {
-	background: #fdfdfd;
-    padding: 0 15px;
+	padding: 0 15px;
 }
-.blog .image {
+.blog .col-4 {
 	margin-right: 23px;
 	margin-bottom: 40px;
-	float: left;
-	width: 32%;
 	background-color: #ffffff;
 	color: #5f5954;
 }
-.blog .image:last-child {
+.blog .col-4:last-child {
 	margin-right: 0;
 }
-.blog .image img {
+.blog .col-4 img {
 	width: 100%;
 }
-.blog .image .container p {
+.blog .col-4 .container p {
 	font-size: 16px;
 	font-family: 'MuseoSans_500', sans-serif;
 	margin: 0;
 	padding-top: 15px;
 }
-.blog .image .container h4 {
+.blog .col-4 .container h4 {
 	font-size: 18px;
 	font-family: 'MuseoSans_500', sans-serif;
 	font-weight: bolder;
 	margin: 0;
 	padding-top: 15px;
 }
-.blog .image .container p:last-child {
+.blog .col-4 .container p:last-child {
 	font-size: 18px;
-	font-family: 'MuseoSans_500', sans-serif;
-	margin: 0;
 	padding: 15px 0 15px 0;
-	color: #f66361;
 }
-.blog .image .container p:last-child a {
+.blog .col-4 .container p:last-child a {
 	color: #f66361;
 	text-decoration: none;
 }
-.blog .image .container p:last-child a:hover {
+.blog .col-4 .container p:last-child a:hover {
 	color: #980806;
 }
 /*Footer-top*/
@@ -529,8 +515,6 @@ header .navbar > ul li a:hover {
 }
 .footer-middle .navbar > ul li {
 	display: inline-block;
-	padding-right: 15px;
-	color: #f55856;
 }
 .footer-middle .navbar > ul li a {
 	display: block;
